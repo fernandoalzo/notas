@@ -2,4 +2,9 @@
  repositorio con notas
 
 ## postgresql
-notas de comandos sql
+```powershell
+#ingresar a postgres
+psql.exe -U postgress
+#list databases
+\l
+```
