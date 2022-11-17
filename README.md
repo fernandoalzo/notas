@@ -1,6 +1,15 @@
 # notas erre
  repositorio con notas
 
+## NESTJS NEST.JS
+```powershell
+#install nestjs
+npm i -g @nestjs/cli
+#check nest version
+nest --version
+
+```
+
 ## postgresql
 ```powershell
 #ingresar a postgres
@@ -21,5 +30,8 @@ drop database dataBaseName
 #backup database
 pd_dump -U userName dataBaseName > dataBaseNameCopy.sql
 #restore database
-psql -U userName
+psql -U userName dataBaseName < dataBaseNameCopy.sql
+
+#change user password
+ALTER USER userName WITH PASSWORD newPassword
 ```
