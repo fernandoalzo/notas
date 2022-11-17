@@ -32,7 +32,14 @@ nest g s serviceName --flat
 # create modules
 nest g mo moduleName
 
+#install validator
+npm i class-validator class-transformer
+#install mapped-types
+npm i mapped-types
 # install config module
+npm i @nestjs/config
+#install swagger for autodocumentation
+npm install --save @nestjs/swagger
 
 
 
