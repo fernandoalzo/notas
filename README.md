@@ -40,9 +40,6 @@ npm i mapped-types
 npm i @nestjs/config
 #install swagger for autodocumentation
 npm install --save @nestjs/swagger
-
-
-
 ```
 
 ## postgresql
