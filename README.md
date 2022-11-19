@@ -4,7 +4,7 @@
 ## DOCKER
 
 docker-compose yaml file example:
-
+```
 version: '3.3'
 services:
   postgres:
@@ -17,6 +17,7 @@ services:
       - '5432:5432'
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
+```
 
 ```powershell
 #create a docker image from YAML file 
