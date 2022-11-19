@@ -39,7 +39,7 @@ npm i mapped-types
 # install config module
 npm i @nestjs/config
 #install swagger for autodocumentation
-npm install --save @nestjs/swagger
+npm install --save @nestjs/swagger swagger-ui-express
 ```
 
 ## postgresql
