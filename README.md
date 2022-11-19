@@ -5,9 +5,13 @@
 
 docker-compose yaml file example:
 ```
+# este numero de version no es importante, puede ser cualquiera
 version: '3.3'
+#servocios que se van a cargar
 services:
+  #nombre del servicio que se iniciara, puede ser cualquiera, como ejemplo se usa postgres 
   postgres:
+  #version de la aplicacion que se quiere instalar
     image: postgres:13
     environment:
       - POSTGRES_DB=my_db
@@ -15,6 +19,7 @@ services:
       - POSTGRES_PASSWORD=12345
     ports:
       - '5432:5432'
+    #con esta definicion se agrega persistencia a los datos.
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
 ```
