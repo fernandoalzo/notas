@@ -2,17 +2,22 @@
  repositorio con notas
 
 ## DOCKER
-## Code
 
-Inline `code`
+docker-compose yaml file example:
 
-Indented code
+version: '3.3'
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=my_db
+      - POSTGRES_USER=ROOT
+      - POSTGRES_PASSWORD=12345
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
 
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-    
 ```powershell
 #create a docker image from YAML file 
 #in same directory of .yml file run:
