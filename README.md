@@ -2,6 +2,17 @@
  repositorio con notas
 
 ## DOCKER
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+    
 ```powershell
 #create a docker image from YAML file 
 #in same directory of .yml file run:
