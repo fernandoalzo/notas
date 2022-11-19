@@ -1,6 +1,17 @@
 # notas erre
  repositorio con notas
 
+## DOCKER
+```powershell
+#create a docker image from YAML file 
+#in same directory of .yml file run:
+docker-compose up -d containerName
+#check container process
+docker-compose up -d postgres
+#stop container
+docker-compose down
+```
+
 ## NESTJS NEST.JS
 ```powershell
 #install nestjs
