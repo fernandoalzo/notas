@@ -42,6 +42,18 @@ docker-compose up -d containerName
 docker-compose up -d postgres
 #stop container
 docker-compose down
+# show logs
+docker-compose logs /f
+# ingresar al contenedor en modo shell para tareas administrativas.
+docker-compose exec serviceName bash
+# connect to dataBase into the container
+# inside the container run:
+psql -h localhost -d dbName -U userName
+# commando to check all containers actives
+docker ps
+# container inspection, to show all info about container.
+# the containerId can get from command docker ps
+docker inspect containerId
 ```
 
 ## NESTJS NEST.JS
