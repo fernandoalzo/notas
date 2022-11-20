@@ -7,21 +7,31 @@ docker-compose yaml file example:
 ```
 # este numero de version no es importante, puede ser cualquiera
 version: '3.3'
-#servocios que se van a cargar
+# servocios que se van a cargar
 services:
-  #nombre del servicio que se iniciara, puede ser cualquiera, como ejemplo se usa postgres 
+  # nombre del servicio que se iniciara, puede ser cualquiera, como ejemplo se usa postgres 
   postgres:
-  #version de la aplicacion que se quiere instalar
+  # version de la aplicacion que se quiere instalar
     image: postgres:13
     environment:
       - POSTGRES_DB=my_db
-      - POSTGRES_USER=ROOT
+      - POSTGRES_USER=root
       - POSTGRES_PASSWORD=12345
     ports:
       - '5432:5432'
-    #con esta definicion se agrega persistencia a los datos.
+    # con esta definicion se agrega persistencia a los datos.
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
+  # installacion de pgadmin para la administracion de la base de datos desde un entorno grafico
+  pgadmin:
+    image: dpage/pgadmin4
+
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=rrr@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    # el servicio de pgadmin por default escucha solicitudes por el puerto 80, pero yo lo voy a gestionar desde el puerto 5050
+    ports:
+      - "5050:80"
 ```
 
 ```powershell
