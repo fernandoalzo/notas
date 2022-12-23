@@ -95,6 +95,9 @@ npm i '@nestjs/mapped-types'
 npm i @nestjs/config
 #install swagger for autodocumentation
 npm install --save @nestjs/swagger swagger-ui-express
+#install postgres module an typeorm module
+npm install @nestjs/typeorm typeorm
+npm install pg
 
 # cuando el programa no ecepte cambios es necesario rebuild projext
 npm run build
