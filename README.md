@@ -132,7 +132,7 @@ ALTER USER userName WITH PASSWORD newPassword
 
 ## powershell config haxks
 ```powershell
-#ingresar a postgres
+#set dns server on network adapter
 $adapter = Get-NetAdapter -Name "Wi-Fi"
 Set-DnsClientServerAddress -InterfaceAlias $adapter.Name -ServerAddresses "1.1.1.1","8.8.8.8"
 ```
