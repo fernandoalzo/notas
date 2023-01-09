@@ -146,9 +146,9 @@ Set-DnsClientServerAddress -InterfaceAlias $adapter.Name -ServerAddresses "1.1.1
 ```bash
 #config network adapter
 #1
-sudo ip addr add [ip_address]/[prefijo] dev [network_adapter_name]
+sudo ip addr add [ip_address]/[prefijo] dev [Interface_name]
 #set defaul GW
-sudo ip route add default via 192.168.0.1 dev eth0
+sudo ip route add default via [gateway_IP] dev [Interface_name]
 
 #2
 sudo ifconfig eth0 192.168.0.10 netmask 255.255.255.0
