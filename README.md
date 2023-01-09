@@ -141,3 +141,10 @@ Get-NetAdapter
 $adapter = Get-NetAdapter -Name ["interface_name"]
 Set-DnsClientServerAddress -InterfaceAlias $adapter.Name -ServerAddresses "1.1.1.1","8.8.8.8"
 ```
+
+## linux config haxks bash
+```bash
+#config network adapter
+sudo ip addr add [ip_address]/[prefijo] dev [network_adapter_name]
+sudo ifconfig eth0 192.168.0.10 netmask 255.255.255.0
+```
