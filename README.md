@@ -138,6 +138,6 @@ Set-NetIPInterface -InterfaceIndex [interface_index] -IPAddress [ip_address] -Pr
 Get-NetAdapter
 
 #set dns server on network adapter
-$adapter = Get-NetAdapter -Name "Wi-Fi"
+$adapter = Get-NetAdapter -Name ["interface_name"]
 Set-DnsClientServerAddress -InterfaceAlias $adapter.Name -ServerAddresses "1.1.1.1","8.8.8.8"
 ```
