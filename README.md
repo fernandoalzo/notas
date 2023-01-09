@@ -145,6 +145,20 @@ Set-DnsClientServerAddress -InterfaceAlias $adapter.Name -ServerAddresses "1.1.1
 ## linux config haxks bash
 ```bash
 #config network adapter
+#1
 sudo ip addr add [ip_address]/[prefijo] dev [network_adapter_name]
+#set defaul GW
+sudo ip route add default via 192.168.0.1 dev eth0
+
+#2
 sudo ifconfig eth0 192.168.0.10 netmask 255.255.255.0
+#set defaul GW
+sudo route add default gw 192.168.0.1 eth0
+
+#or editing the /etc/network/interfaces
+auto eth0
+iface eth0 inet static
+address 192.168.0.10
+netmask 255.255.255.0
+gateway 192.168.0.1
 ```
