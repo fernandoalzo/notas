@@ -128,3 +128,11 @@ psql -U userName dataBaseName < dataBaseNameCopy.sql
 #change user password
 ALTER USER userName WITH PASSWORD newPassword
 ```
+
+
+## powershell config haxks
+```powershell
+#ingresar a postgres
+$adapter = Get-NetAdapter -Name "Wi-Fi"
+Set-DnsClientServerAddress -InterfaceAlias $adapter.Name -ServerAddresses "1.1.1.1","8.8.8.8"
+```
