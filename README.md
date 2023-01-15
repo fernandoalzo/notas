@@ -121,7 +121,7 @@ CREATE DATABASE dataBaseName
 drop database dataBaseName
 
 #backup database
-pd_dump -U userName dataBaseName > dataBaseNameCopy.sql
+pg_dump -U userName dataBaseName > dataBaseNameCopy.sql
 #restore database
 psql -U userName dataBaseName < dataBaseNameCopy.sql
 
