@@ -108,6 +108,9 @@ npm install pg
 npm i bcrypt
 #agregar el tipado
 npm i @types/bcrypt -D
+#librerias para auth
+npm install --save @nestjs/passport passport passport-local
+npm install --save-dev @types/passport-local
 
 # cuando el programa no ecepte cambios es necesario rebuild projext
 npm run build
