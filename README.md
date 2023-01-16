@@ -87,6 +87,9 @@ nest g s serviceName --flat
 # create modules
 nest g mo moduleName
 
+#create guards
+nest g gu auth/guards/[guardName] --flat
+
 #install validator
 npm i class-validator class-transformer
 #install mapped-types
