@@ -90,6 +90,9 @@ nest g mo moduleName
 #create guards
 nest g gu auth/guards/[guardName] --flat
 
+#create decorator
+nest g d auth/decorators/[decoratorName] --flat
+
 #install validator
 npm i class-validator class-transformer
 #install mapped-types
