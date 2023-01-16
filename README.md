@@ -104,6 +104,8 @@ npm install --save @nestjs/swagger swagger-ui-express
 #install postgres module an typeorm module
 npm install @nestjs/typeorm typeorm
 npm install pg
+#install bcrypt to hasing passwords
+npm i bcrypt 
 
 # cuando el programa no ecepte cambios es necesario rebuild projext
 npm run build
