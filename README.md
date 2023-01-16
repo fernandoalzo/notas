@@ -105,7 +105,9 @@ npm install --save @nestjs/swagger swagger-ui-express
 npm install @nestjs/typeorm typeorm
 npm install pg
 #install bcrypt to hasing passwords
-npm i bcrypt 
+npm i bcrypt
+#agregar el tipado
+npm i @types/bcrypt -D
 
 # cuando el programa no ecepte cambios es necesario rebuild projext
 npm run build
