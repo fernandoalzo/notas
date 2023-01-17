@@ -111,6 +111,9 @@ npm i @types/bcrypt -D
 #librerias para auth
 npm install --save @nestjs/passport passport passport-local
 npm install --save-dev @types/passport-local
+#install JWT para la creacion de tokens de sesion
+npm install --save @nestjs/jwt passport-jwt
+npm install --save-dev @types/passport-jwt
 
 # cuando el programa no ecepte cambios es necesario rebuild projext
 npm run build
