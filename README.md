@@ -93,10 +93,10 @@ nest g gu auth/guards/[guardName] --flat
 #create decorator
 nest g d auth/decorators/[decoratorName] --flat
 
-#install validator
-npm i class-validator class-transformer
 #install mapped-types
 npm i '@nestjs/mapped-types'
+#install validator
+npm i class-validator class-transformer
 # install config module
 npm i @nestjs/config
 #install swagger for autodocumentation
