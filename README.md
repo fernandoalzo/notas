@@ -86,6 +86,8 @@ nest g s serviceName --flat
 
 # create modules
 nest g mo moduleName
+#create class
+nest g class busqueda/dtos/busqueda.dto
 
 #create guards
 nest g gu auth/guards/[guardName] --flat
