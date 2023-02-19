@@ -76,7 +76,7 @@ docker rm <ID o nombre>
 docker container prune 
 # corre un ubuntu pero lo deja apagado
 docker run ubuntu 
-lista todos los contenedores
+# lista todos los contenedores
 docker ps -a 
 # lo corre y entro al shell de ubuntu -i: interactivo -t: abre la consola
 docker -it ubuntu 
@@ -90,10 +90,8 @@ docker stop proxy
 docker rm proxy 
 # lo para y lo borra
 docker rm -f <contenedor> 
-# corro un nginx y expongo el puerto 80 del contenedor en el puerto 8080 de mi máquina
+# corro un nginx y expongo el puerto 80 del contenedor en el puerto 8080 de mi máquina, # desde mi navegador compruebo que funcione localhost:8080 
 docker run -d --name proxy -p 8080:80 nginx 
-# desde mi navegador compruebo que funcione
-localhost:8080 
 # veo los logs
 docker logs proxy 
 # hago un follow del log
