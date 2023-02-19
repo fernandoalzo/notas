@@ -32,32 +32,6 @@ services:
     # el servicio de pgadmin por default escucha solicitudes por el puerto 80, pero yo lo voy a gestionar desde el puerto 5050
     ports:
       - "5050:80"
-
-Comandos:
-$ docker run hello-world (corro el contenedor hello-world)
-$ docker ps (muestra los contenedores activos)
-$ docker ps -a (muestra todos los contenedores)
-$ docker inspect <containe ID> (muestra el detalle completo de un contenedor)
-$ docker inspect <name> (igual que el anterior pero invocado con el nombre)
-$ docker run –-name hello-platzi hello-world (le asigno un nombre custom “hello-platzi”)
-$ docker rename hello-platzi hola-platzy (cambio el nombre de hello-platzi a hola-platzi)
-$ docker rm <ID o nombre> (borro un contenedor)
-$ docker container prune (borro todos lo contenedores que esten parados)
-$ docker run ubuntu (corre un ubuntu pero lo deja apagado)
-$ docker ps -a (lista todos los contenedores)
-$ docker -it ubuntu (lo corre y entro al shell de ubuntu)
-  -i: interactivo
-  -t: abre la consola
-	Ejempl: Docker run -it debian #correo una maquina con debian
-$ docker run -d --name proxy nginx (corro un nginx)
-$ docker stop proxy (apaga el contenedor)
-$ docker rm proxy (borro el contenedor)
-$ docker rm -f <contenedor> (lo para y lo borra)
-$ docker run -d --name proxy -p 8080:80 nginx (corro un nginx y expongo el puerto 80 del contenedor en el puerto 8080 de mi máquina)
-localhost:8080 (desde mi navegador compruebo que funcione)
-$ docker logs proxy (veo los logs)
-$ docker logs -f proxy (hago un follow del log)
-$ docker logs --tail 10 -f proxy (veo y sigo solo las 10 últimas entradas del log)
 ```
 
 ```powershell
@@ -80,6 +54,53 @@ docker ps
 # container inspection, to show all info about container.
 # the containerId can get from command docker ps
 docker inspect containerId
+
+# Comandos docker:
+#corro el contenedor hello-world
+docker run hello-world
+# muestra los contenedores activos
+docker ps 
+# muestra todos los contenedores
+docker ps -a 
+# muestra el detalle completo de un contenedor
+docker inspect <containe ID> 
+# igual que el anterior pero invocado con el nombre
+docker inspect <name> 
+# le asigno un nombre custom “hello-platzi”
+docker run –-name hello-platzi hello-world 
+# cambio el nombre de hello-platzi a hola-platzi
+docker rename hello-platzi hola-platzy 
+# borro un contenedor
+docker rm <ID o nombre> 
+# borro todos lo contenedores que esten parados
+docker container prune 
+# corre un ubuntu pero lo deja apagado
+docker run ubuntu 
+lista todos los contenedores
+docker ps -a 
+# lo corre y entro al shell de ubuntu -i: interactivo -t: abre la consola
+docker -it ubuntu 
+ #correo una maquina con debian
+Docker run -it debian
+# corro un nginx
+docker run -d --name proxy nginx 
+# apaga el contenedor
+docker stop proxy 
+# borro el contenedor
+docker rm proxy 
+# lo para y lo borra
+docker rm -f <contenedor> 
+# corro un nginx y expongo el puerto 80 del contenedor en el puerto 8080 de mi máquina
+docker run -d --name proxy -p 8080:80 nginx 
+# desde mi navegador compruebo que funcione
+localhost:8080 
+# veo los logs
+docker logs proxy 
+# hago un follow del log
+docker logs -f proxy 
+veo y sigo solo las 10 últimas entradas del log
+docker logs --tail 10 -f proxy 
+
 ```
 
 ## NESTJS NEST.JS
