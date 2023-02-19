@@ -98,7 +98,7 @@ localhost:8080
 docker logs proxy 
 # hago un follow del log
 docker logs -f proxy 
-veo y sigo solo las 10 últimas entradas del log
+# veo y sigo solo las 10 últimas entradas del log
 docker logs --tail 10 -f proxy 
 
 ```
