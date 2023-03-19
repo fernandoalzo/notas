@@ -117,6 +117,10 @@ npm install @hapi/boom
 
 #install libraries for data validation 
 npm install joi
+
+#install postgres
+npm install pg
+
 ```
 
 
