@@ -101,6 +101,25 @@ docker logs --tail 10 -f proxy
 
 ```
 
+## nodejs
+```powershell
+#start new project
+npm init -y
+
+#install express
+npm install express
+
+#install basic libraries for project node 
+npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D
+
+#install boom for http error handlers
+npm install @hapi/boom
+
+#install libraries for data validation 
+npm install joi
+```
+
+
 ## NESTJS NEST.JS
 ```powershell
 #install nestjs
