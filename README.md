@@ -123,6 +123,9 @@ npm install pg
 
 #install library to handle sthe .env files
 npm install dotenv
+
+install sequalize as ORM
+npm install --save sequelize
 ```
 
 
