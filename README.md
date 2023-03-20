@@ -121,6 +121,8 @@ npm install joi
 #install postgres
 npm install pg
 
+#install library to handle sthe .env files
+npm install dotenv
 ```
 
 
