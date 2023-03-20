@@ -126,6 +126,7 @@ npm install dotenv
 
 install sequalize as ORM
 npm install --save sequelize
+npm install --save pg-hstore
 ```
 
 
