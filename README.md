@@ -1,6 +1,30 @@
 # notas erre
  repositorio con notas
 
+## GOOGLE CLOUD
+
+ ```powershell
+ #google cloud authentication
+gcloud auth login
+#get evironment details
+gcloud info
+#list all projects
+gcloud projects list
+#get config list
+gcloud config list
+#select project to work
+gcloud config set project <project-id>
+#get list of VM instances of project
+gcloud compute instacees list
+#get intances VM details
+gcloud compute instances describe <instanceName>
+#start stop vm instances
+gcloud compute instances <stop || start> <instanceName>
+#launch ssh console from instance
+gcloud compute ssh <instanceName>
+
+```
+
 ## DOCKER
 
 docker-compose yaml file example:
