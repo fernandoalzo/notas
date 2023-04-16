@@ -23,6 +23,11 @@ gcloud compute instances <stop || start> <instanceName>
 #launch ssh console from instance
 gcloud compute ssh <instanceName>
 
+#get firewall rules
+gcloud compute firewall-rules list
+#get details for a rule
+gcloud compute firewall-rules describe <ruleName>
+
 ```
 
 ## DOCKER
