@@ -4,7 +4,9 @@
 ## GOOGLE CLOUD
 
  ```powershell
- #google cloud authentication
+#google auth with key, run the following command when have the json file with the key
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\here\the\path_to\service-account-file.json"
+#google cloud authentication
 gcloud auth login
 #get evironment details
 gcloud info
