@@ -161,6 +161,7 @@ npm install --save pg-hstore
 
 #install swagger for documentation
 npm install swagger-ui-express swagger-jsdoc
+npm install js-yaml
 ```
 
 
