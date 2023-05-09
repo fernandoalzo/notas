@@ -155,9 +155,12 @@ npm install pg
 #install library to handle sthe .env files
 npm install dotenv
 
-install sequalize as ORM
+#install sequalize as ORM
 npm install --save sequelize
 npm install --save pg-hstore
+
+#install swagger for documentation
+npm install swagger-ui-express swagger-jsdoc
 ```
 
 
