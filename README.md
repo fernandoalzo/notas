@@ -133,7 +133,7 @@ docker logs --tail 10 -f proxy
 ```
 
 ## nodejs
-```powershell
+```bash
 #start new project
 npm init -y
 
