@@ -163,7 +163,24 @@ npm install --save pg-hstore
 npm install swagger-ui-express swagger-jsdoc
 npm install js-yaml
 ```
-
+## pm2
+```powershell
+#to delpoy nodejs apps uding pm2
+#install
+npm install -g pm2
+#run, reload, stop app
+pm2 start index.js
+pm2 reload [appName]
+pm2 stop [appNamer}
+#get list of apps running with pm2 daemon
+pm2 list
+#enable pm2 daemon in startup system
+pm2 startup
+#view pm2 logs
+pm2 logs [app_name]
+#open pm2 dashboard
+pm2 monit
+```
 
 ## NESTJS NEST.JS
 ```powershell
