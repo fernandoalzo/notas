@@ -180,6 +180,10 @@ pm2 startup
 pm2 logs [app_name]
 #open pm2 dashboard
 pm2 monit
+#delete app from pannel
+pm2 delete app
+#save the current config
+pm2 save
 ```
 
 ## NESTJS NEST.JS
