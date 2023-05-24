@@ -162,6 +162,9 @@ npm install --save pg-hstore
 #install swagger for documentation
 npm install swagger-ui-express swagger-jsdoc
 npm install js-yaml
+
+#securiy passwords, hasing password
+npm install bcrypt
 ```
 ## pm2
 ```powershell
