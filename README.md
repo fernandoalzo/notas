@@ -165,6 +165,9 @@ npm install js-yaml
 
 #securiy passwords, hasing password
 npm install bcrypt
+
+#install passport for login strategies
+npm install passport passport-local
 ```
 ## pm2
 ```powershell
