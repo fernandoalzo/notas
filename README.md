@@ -168,6 +168,8 @@ npm install bcrypt
 
 #install passport for login strategies
 npm install passport passport-local
+#install jwt strategy
+npm install passport-jwt
 
 #install jsonwebtoken
 npm install jsonwebtoken
