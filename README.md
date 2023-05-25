@@ -171,6 +171,9 @@ npm install passport passport-local
 
 #install jsonwebtoken
 npm install jsonwebtoken
+
+#for add logging to the app
+npm install morgan
 ```
 ## pm2
 ```powershell
