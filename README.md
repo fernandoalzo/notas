@@ -168,6 +168,9 @@ npm install bcrypt
 
 #install passport for login strategies
 npm install passport passport-local
+
+#install jsonwebtoken
+npm install jsonwebtoken
 ```
 ## pm2
 ```powershell
