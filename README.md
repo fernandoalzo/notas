@@ -265,6 +265,13 @@ npm install --save-dev @types/passport-jwt
 npm run build
 ```
 
+## nodejs
+```powershell
+#install reac and install project
+npx create-react-app ./ || [folder_path]
+
+```
+
 ## postgresql
 ```powershell
 #ingresar a postgres
