@@ -1,6 +1,55 @@
 # notas erre
  repositorio con notas
 
+# METASPLOIT
+
+ ```powershell
+ #ititiate db for metasploit
+ msfdb init
+ #lauch the console
+ msfconsole
+
+ #search manual
+ search -h
+ #realize searchs into metaslpoit console
+ search [keyword to search]
+ #modules
+ #to use a module
+ use module/path/touse || use [index number ofter search]
+ #show module options to config, use set command to set options
+ show options
+ #run the module
+ run || exploit
+ #move back from module
+ back
+ #add multiple modules to stack for execution
+ #insisde the module post cofigured run 
+ pushm
+ #walk thorught stack
+ popm
+ #set the global variables
+ setg [VARIABLE NAME, example RHOSTS 8.8.8.8]
+ #to show in the db the hosts thattested
+ hosts
+ #to show the services that i found while scanning run
+ services
+ #import results fron nmap portscan into the metasploit console database
+ #first run nmap scan and redirecto the output to xml file
+ namp -A -T4 -v -Pn -oX [path when output is saved]
+ #inside the mestasploit console 
+ db_import [file with scan output]
+ #when import finished, just use the db commands services, hosts etc.. or just from ip services 192.168.1.1
+ services
+ hosts
+ services 192.168.1.1
+ etc...
+ #or just use db_nmap
+ db_nmap -A -T4 -v -Pn 192.168.1.1
+ #make fingerprinting with metasloit
+ #search de auxiliary mudule
+ search type:auxiliary _version
+```
+
 ## GOOGLE CLOUD
 
  ```powershell
