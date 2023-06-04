@@ -2,6 +2,14 @@
  repositorio con notas
 
 # METASPLOIT
+```powershell
+#install 
+pip.exe install jupyterlab
+#run
+jupyter-lab.exe
+```
+
+# METASPLOIT
 
  ```powershell
  #ititiate db for metasploit
