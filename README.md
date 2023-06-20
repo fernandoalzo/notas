@@ -1,7 +1,7 @@
 # notas erre
  repositorio con notas
 
-# METASPLOIT
+# jupyter
 ```powershell
 #install 
 pip.exe install jupyterlab
