@@ -27,6 +27,18 @@ gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
 apt-get update
 #install
 sudo apt-get install -y tor deb.torproject.org-keyring
+#edit configution file
+nano /etc/tor/torrc
+#add to file
+ControlPort 9051
+CookieAuthentication 1
+CookieAuthFileGroupReadable 1
+Log notice stdout
+SOCKSPort 9050
+#restart tor service
+service tor restart
+#check tor service
+curl --socks5 localhost:9050 --socks5-hostname localhost:9050 -s https://check.torproject.org/ | cat | grep -m 1 Congratulations | xargs
 ```
 
 # METASPLOIT
