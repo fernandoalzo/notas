@@ -12,6 +12,7 @@ jupyter-lab.exe
 # Bitcoin-Core
 
  ```bash
+#complete manual https://github.com/js-ms/platzi-bitcoin-core
 # Instala las dependencias necesarias para correr bitcoin core 
 # ccache no es requerida pero puede servirte. https://github.com/ccache/ccache
 # Si quieres conocer más https://github.com/bitcoin/bitcoin/blob/master/doc/dependencies.md 
