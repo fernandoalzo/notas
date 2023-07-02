@@ -9,6 +9,44 @@ pip.exe install jupyterlab
 jupyter-lab.exe
 ```
 
+# Bitcoin-Core
+
+ ```bash
+# Instala las dependencias necesarias para correr bitcoin core 
+# ccache no es requerida pero puede servirte. https://github.com/ccache/ccache
+# Si quieres conocer más https://github.com/bitcoin/bitcoin/blob/master/doc/dependencies.md 
+sudo apt install git build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libminiupnpc-dev libzmq3-dev
+
+# Clona el código fuente de github, puedes hacerlo desde el repositorio de Bitcoin o través de un fork que generes
+git clone -b v22.0 https://github.com/bitcoin/bitcoin.git
+
+# Muévete al directorio
+cd bitcoin/
+
+# Corre este comando para poder usar BerkeleyDB (Base de datos para la billetera)
+./contrib/install_db4.sh `pwd`
+
+# Ten en cuenta la salida del proceso anterior, el export te servirá más adelante
+
+# Ejecuta export BDB_PREFIX='<PATH-TO>/db4' antes de correr el script autogen.sh
+./autogen.sh
+
+# En tu configure puedes usar cuantas banderas necesites
+# Para configurar tu complilación, por ejemplo CXXFLAGS u otras banderas como --with-zmq, --without-gui BDB libs es necesario para que puedas usar la billetera, recuerda que esto es solo un ejemplo, a nivel productivo no deberías usar la billetera.
+# Puedes ejecutar ./configure --help para encontrar todas las opciones posibles.
+./configure BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include" CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768" --with-zmq --without-gui 
+
+# make construye tu programa, usamos nproc para conocer cuantos núcleos tiene nuestro procesador.
+# -j especifica el número de tareas a correr de manera simultánea
+# Esto puede tomar un tiempo....
+make -j "$(($(nproc)+1))"
+
+# Puedes usar ccache para acelerar el proceso si reconstruyes múltiples veces, para más información https://github.com/bitcoin/bitcoin/blob/master/doc/productivity.md 
+
+# Make install permite usar bitcoind y bitcoin-cli en cualquier parte de nuestro sistema operativo
+sudo make install
+```
+
 # TOR Network
 
  ```bash
