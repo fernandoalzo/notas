@@ -47,6 +47,22 @@ make -j "$(($(nproc)+1))"
 # Make install permite usar bitcoind y bitcoin-cli en cualquier parte de nuestro sistema operativo
 sudo make install
 ```
+# Bitcoin
+
+ ```bash
+#create wallet
+bitcoi-cli createwallet "name"
+#encrypt the wallet
+bitcoin-cli -rpcwallet="walletName" encryptwallet "password"
+#unlock the wallet to make transaction
+bitcoin-cli -rpcwallet="walletName" walletpassphrase "password" 300 #5 minutes of timestamp
+#get bitcoin address
+bitcoin-cli -rpcwallet="walletName" getnewaddress
+#from another wallet make a transaction, sending founds to the address previously create
+bitcoin-cli -rpcwallet="walletName" sendtoaddress <destinationAddress> <mountInBtc>
+#when transaction is done, then return the txId, with that we can check the transaction info and status
+bitcoiin-cli -rpcwallet="walletName" gettransaction <txId>
+```
 
 # TOR Network
 
