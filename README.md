@@ -59,9 +59,12 @@ bitcoin-cli -rpcwallet="walletName" walletpassphrase "password" 300 #5 minutes o
 #get bitcoin address
 bitcoin-cli -rpcwallet="walletName" getnewaddress
 #from another wallet make a transaction, sending founds to the address previously create
+#first check the estamate fee for transaction
+bitcoin-cli estimatesmartfee <numberofconfirmations>
+#now the transaction
 bitcoin-cli -rpcwallet="walletName" sendtoaddress <destinationAddress> <mountInBtc>
 #when transaction is done, then return the txId, with that we can check the transaction info and status
-bitcoiin-cli -rpcwallet="walletName" gettransaction <txId>
+bitcoin-cli -rpcwallet="walletName" gettransaction <txId>
 ```
 
 # TOR Network
