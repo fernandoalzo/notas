@@ -12,6 +12,41 @@ jupyter-lab.exe
 # Bitcoin-Core
 
  ```bash
+#initialize a repository
+git init
+check status for repository
+git status
+config git to authenticate in de app
+#check current config
+git config --list
+#set configs
+git config global user.name "name of user"
+git config --global user.email "user@email.com"
+
+#when a new file is created then is necesary run the following command, always any change is made before commit is necesary run git add command
+git add filename.txt
+#to add all files in the current directory
+git add .
+#send the changes to repository
+git commit -m "some coments"
+
+#check the logs for especific file
+git log <filename>
+#show the changes that were made to the specifi file
+git show <filename>
+
+#compare two commits made to view the changes made, using the commit id that is show with git log <filename>
+git diff <commitId_1> <commitId_2>
+
+#create the ssh keys to authenticate in github
+ssh-keygen -t rsa -b 4096 -C "fuser@mail.com"
+#add the priv key
+ssh-add .ssh/id_rsa
+```
+
+# Bitcoin-Core
+
+ ```bash
 #complete manual https://github.com/js-ms/platzi-bitcoin-core
 # Instala las dependencias necesarias para correr bitcoin core 
 # ccache no es requerida pero puede servirte. https://github.com/ccache/ccache
