@@ -103,6 +103,11 @@ bitcoin-cli -rpcwallet="walletName" gettransaction <txId>
 
 #load wallet from wallet file
 bitcoin-cli -rpcwallet="<walletName>" loadwallet <path_to_walletfile>
+#load wallet from privatw kwy
+bitcoin-cli -rpcwallet="<walletname>" importprivkey <privkey>
+
+#get the privkey from anyone used wallet address
+bitcoin-cli -rpcwallet="<walletname>" dumpprivkey <address>
 ```
 
 # TOR Network
