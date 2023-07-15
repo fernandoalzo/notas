@@ -100,6 +100,9 @@ bitcoin-cli estimatesmartfee <numberofconfirmations>
 bitcoin-cli -rpcwallet="walletName" sendtoaddress <destinationAddress> <mountInBtc>
 #when transaction is done, then return the txId, with that we can check the transaction info and status
 bitcoin-cli -rpcwallet="walletName" gettransaction <txId>
+
+#load wallet from wallet file
+bitcoin-cli -rpcwallet="<walletName>" loadwallet <path_to_walletfile>
 ```
 
 # TOR Network
