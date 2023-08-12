@@ -348,6 +348,7 @@ npm install dotenv
 #install sequalize as ORM
 npm install --save sequelize
 npm install --save pg-hstore
+npm install sequelize-cli --save-dev
 
 #install swagger for documentation
 npm install swagger-ui-express swagger-jsdoc
