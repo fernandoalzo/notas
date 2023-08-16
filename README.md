@@ -349,6 +349,11 @@ npm install dotenv
 npm install --save sequelize
 npm install --save pg-hstore
 npm install sequelize-cli --save-dev
+#commands for migrations
+npm run migrations:generate <migration_name>
+npm run migrations:run
+npm run migrations:revert
+npm run migrations:delete
 
 #install swagger for documentation
 npm install swagger-ui-express swagger-jsdoc
