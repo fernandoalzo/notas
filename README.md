@@ -18,6 +18,8 @@ conda create --name <envName> python=3.10
 #activate the env
 conda activate
 conda activate <envName>
+#desactivar env
+conda deactivate <envName>
 ```
 
 # jupyter
