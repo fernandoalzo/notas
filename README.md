@@ -1,6 +1,25 @@
 # notas erre
  repositorio con notas
 
+
+# conda
+```powershell
+#Downloads
+https://docs.conda.io/projects/miniconda/en/latest/
+#install
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+#init
+~/miniconda3/bin/conda init bash
+#create the env
+conda create --name <envName> python=3.10
+#activate the env
+conda activate
+conda activate <envName>
+```
+
 # jupyter
 ```powershell
 #install 
