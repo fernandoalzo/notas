@@ -20,6 +20,8 @@ conda activate
 conda activate <envName>
 #desactivar env
 conda deactivate <envName>
+#list environments
+conda info --envs
 ```
 
 # jupyter
