@@ -1,6 +1,13 @@
 # notas erre
  repositorio con notas
 
+# cloudFared
+```powershell
+#install windows
+winget install --id Cloudflare.cloudflared
+#run
+cloudflared tunnel —url http://localhost:3000
+```
 
 # conda
 ```powershell
