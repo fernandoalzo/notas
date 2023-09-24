@@ -402,6 +402,9 @@ npm install jsonwebtoken
 
 #for add logging to the app
 npm install morgan
+
+#install cors
+npm install  cors
 ```
 ## pm2
 ```powershell
