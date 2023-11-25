@@ -1,6 +1,17 @@
 # notas erre
  repositorio con notas
 
+# React Native
+```powershell
+#create the app
+npx create-expo-app <projectName>
+cd AwesomeProject
+#normal start
+npx expo start
+#start into android emulator previous opened
+npx expo start --android
+```
+
 # cloudFared
 ```powershell
 #install windows
