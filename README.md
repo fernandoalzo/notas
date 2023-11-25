@@ -3,6 +3,8 @@
 
 # React Native
 ```powershell
+#install expo go
+npm install -g expo-cli
 #create the app
 npx create-expo-app <projectName>
 cd AwesomeProject
