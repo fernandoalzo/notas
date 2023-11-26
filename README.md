@@ -12,6 +12,12 @@ cd AwesomeProject
 npx expo start
 #start into android emulator previous opened
 npx expo start --android
+#install react navigation
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native-stack
+npm install @react-navigation/bottom-tabs
+npm install @react-navigation/drawer
 ```
 
 # cloudFared
