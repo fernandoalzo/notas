@@ -20,6 +20,12 @@ npm install @react-navigation/stack
 npm install @react-navigation/native-stack
 npm install @react-navigation/bottom-tabs
 npm install @react-navigation/drawer
+
+#to fix Drawer error:
+#add the nex line into babel.config.js
+plugins: ['react-native-reanimated/plugin']
+#and Run:
+expo r -c
 ```
 
 # cloudFared
