@@ -22,6 +22,8 @@ npm install @react-navigation/stack
 npm install @react-navigation/native-stack
 npm install @react-navigation/bottom-tabs
 npm install @react-navigation/drawer
+#install icons
+npm install react-native-vector-icons
 
 #to fix Drawer error:
 #add the nex line into babel.config.js
