@@ -5,8 +5,10 @@
 ```powershell
 #install expo go
 npm install -g expo-cli
-#create the app
+#create the app option 1
 npx create-expo-app <projectName>
+#create the app option 2
+expo ini <projectName>
 cd AwesomeProject
 #normal start
 npx expo start
