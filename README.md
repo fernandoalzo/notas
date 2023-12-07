@@ -26,6 +26,8 @@ npm install @react-navigation/drawer
 npm install react-native-vector-icons
 #install libraries for forms handler
 npm install formik yup
+#for local storage
+npm i @react-native-async-storage/async-storage
 
 #to fix Drawer error:
 #add the nex line into babel.config.js
