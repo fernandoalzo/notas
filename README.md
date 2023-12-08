@@ -35,7 +35,7 @@ npm install -g eas-cli
 #then run foor .aab format
 eas build -p androi
 #for apk format after edit aes.json file
-eas build -p android --profile preview
+eas build -p android --profile <profile>
 
 #to fix Drawer error:
 #add the nex line into babel.config.js
