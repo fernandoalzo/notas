@@ -32,8 +32,10 @@ npm i @react-native-async-storage/async-storage
 #build the app to apk file
 #install EAS package
 npm install -g eas-cli
-#then run
+#then run foor .aab format
 eas build -p androi
+#for apk format after edit aes.json file
+eas build -p android --profile preview
 
 #to fix Drawer error:
 #add the nex line into babel.config.js
