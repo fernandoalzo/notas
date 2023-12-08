@@ -29,6 +29,12 @@ npm install formik yup
 #for local storage
 npm i @react-native-async-storage/async-storage
 
+#build the app to apk file
+#install EAS package
+npm install -g eas-cli
+#then run
+eas build -p androi
+
 #to fix Drawer error:
 #add the nex line into babel.config.js
 plugins: ['react-native-reanimated/plugin']
