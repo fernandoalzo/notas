@@ -42,6 +42,8 @@ eas build -p android --profile <profile>
 plugins: ['react-native-reanimated/plugin']
 #and Run:
 expo r -c
+#to fix the problem when use scrool defual vie
+npm i react-native-virtualized-view
 ```
 
 # cloudFared
