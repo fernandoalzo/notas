@@ -42,7 +42,7 @@ eas build -p android --profile <profile>
 plugins: ['react-native-reanimated/plugin']
 #and Run:
 expo r -c
-#to fix the problem when use scrool defual vie
+#to fix the problem when i use ScrollView from the react-navice defaul library
 npm i react-native-virtualized-view
 ```
 
