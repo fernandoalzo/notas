@@ -28,6 +28,8 @@ npm install react-native-vector-icons
 npm install formik yup
 #for local storage
 npm i @react-native-async-storage/async-storage
+# for create searchs boxes
+npm i --save lodash.filter
 
 #build the app to apk file
 #install EAS package
