@@ -30,6 +30,8 @@ npm install formik yup
 npm i @react-native-async-storage/async-storage
 # for create searchs boxes
 npm i --save lodash.filter
+# for create dropdownlists
+npm install react-native-picker-select
 
 #build the app to apk file
 #install EAS package
