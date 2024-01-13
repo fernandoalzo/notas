@@ -40,6 +40,8 @@ npm install -g eas-cli
 eas build -p androi
 #for apk format after edit aes.json file
 eas build -p android --profile <profile>
+#for use color in gradient
+expo install expo-linear-gradient
 
 #to fix Drawer error:
 #add the nex line into babel.config.js
