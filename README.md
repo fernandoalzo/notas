@@ -32,6 +32,8 @@ npm i @react-native-async-storage/async-storage
 npm i --save lodash.filter
 # for create dropdownlists
 npm install react-native-picker-select
+#for create radio button
+npm install react-native-paper
 
 #build the app to apk file
 #install EAS package
