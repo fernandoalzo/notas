@@ -460,6 +460,10 @@ npm install morgan
 
 #install cors
 npm install  cors
+
+#for limit request and avoid DDOS
+npm install express-rate-limit
+
 ```
 ## pm2
 ```powershell
