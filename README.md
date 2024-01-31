@@ -461,7 +461,7 @@ npm install morgan
 #install cors
 npm install  cors
 
-#for limit request and avoid DDOS
+#for limit request and avoid dos and DDOS
 npm install express-rate-limit
 
 ```
