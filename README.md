@@ -34,6 +34,8 @@ npm i --save lodash.filter
 npm install react-native-picker-select
 #for create radio button
 npm install react-native-paper
+#date picker
+npm install @react-native-community/datetimepicker --save
 
 #build the app to apk file
 #install EAS package
