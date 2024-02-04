@@ -36,6 +36,9 @@ npm install react-native-picker-select
 npm install react-native-paper
 #date picker
 npm install @react-native-community/datetimepicker --save
+#date picker for expo:
+npx expo install @react-native-community/datetimepicker
+
 
 #build the app to apk file
 #install EAS package
