@@ -50,6 +50,9 @@ eas build -p android --profile <profile>
 #for use color in gradient
 expo install expo-linear-gradient
 
+#clear cache
+expo r -c
+
 #to fix Drawer error:
 #add the nex line into babel.config.js
 plugins: ['react-native-reanimated/plugin']
