@@ -64,6 +64,8 @@ plugins: ['react-native-reanimated/plugin']
 expo r -c
 #to fix the problem when i use ScrollView from the react-navice defaul library
 npm i react-native-virtualized-view
+# to fix SSRProvider error, after remove the lines run next command
+npx patch-package native-base
 ```
 
 # cloudFared
