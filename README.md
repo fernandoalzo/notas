@@ -39,6 +39,10 @@ npm install @react-native-community/datetimepicker --save
 #date picker for expo:
 npx expo install @react-native-community/datetimepicker
 
+#install native-base
+npm install native-base
+expo install react-native-svg@12.1.1
+expo install react-native-safe-area-context@3.3.2
 
 #build the app to apk file
 #install EAS package
