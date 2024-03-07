@@ -38,6 +38,8 @@ npm install react-native-paper
 npm install @react-native-community/datetimepicker --save
 #date picker for expo:
 npx expo install @react-native-community/datetimepicker
+# install vectors icons
+npm i @expo/vector-icons 
 
 #install native-base
 npm install native-base
