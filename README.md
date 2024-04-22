@@ -40,8 +40,10 @@ npm install @react-native-community/datetimepicker --save
 npx expo install @react-native-community/datetimepicker
 # install vectors icons
 npm i @expo/vector-icons
-install swipe list
+# install swipe list
 npm install --save react-native-swipe-list-view
+# install charts
+npm install --save victory-native@legacy
 
 #install native-base
 npm install native-base
