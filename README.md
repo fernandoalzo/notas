@@ -44,6 +44,9 @@ npm i @expo/vector-icons
 npm install --save react-native-swipe-list-view
 # install charts
 npm install --save victory-native@legacy
+# install libraries for decode jwtTokens sent from backend server
+npm install core-js
+npm install jwt-decode
 
 #install native-base
 npm install native-base
