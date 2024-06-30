@@ -47,6 +47,8 @@ npm install --save victory-native@legacy
 # install libraries for decode jwtTokens sent from backend server
 npm install core-js
 npm install jwt-decode
+# library for compression in express
+npm install compression
 
 #install native-base
 npm install native-base
