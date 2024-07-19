@@ -61,6 +61,8 @@ npm install -g eas-cli
 #then run foor .aab format
 eas build -p androi
 #for apk format after edit aes.json file
+#before to compile run:
+npx expo install expo-build-properties
 eas build -p android --profile <profile>
 #for use color in gradient
 expo install expo-linear-gradient
