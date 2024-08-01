@@ -51,6 +51,8 @@ npm install core-js
 npm install jwt-decode
 # library for compression in express
 npm install compression
+#install library for use map
+npm install react-native-maps
 
 #install native-base
 npm install native-base
