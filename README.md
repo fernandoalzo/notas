@@ -70,6 +70,9 @@ npx expo install expo-build-properties
 eas build -p android --profile <profile>
 #for use color in gradient
 expo install expo-linear-gradient
+#to check verion for any packet
+npm view [packageName] version
+npm view react-native-maps version
 
 #clear cache
 expo r -c
