@@ -479,7 +479,8 @@ npm install swagger-ui-express swagger-jsdoc
 npm install js-yaml
 
 #securiy passwords, hasing password
-npm install bcrypt
+npm install bcrypt #deprecarted
+npm install --save bcryptjs 
 
 #install passport for login strategies
 npm install passport passport-local
