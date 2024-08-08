@@ -499,6 +499,8 @@ npm install  cors
 #for limit request and avoid dos and DDOS
 npm install express-rate-limit
 
+#clear cache
+npm cache clean --force 
 ```
 ## pm2
 ```powershell
