@@ -496,6 +496,9 @@ npm install morgan
 #install cors
 npm install  cors
 
+#install libraries for set uploader files to server
+npm install multer
+
 #for limit request and avoid dos and DDOS
 npm install express-rate-limit
 
