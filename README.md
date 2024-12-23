@@ -59,6 +59,9 @@ npm install native-base
 expo install react-native-svg@12.1.1
 expo install react-native-safe-area-context@3.3.2
 
+#install image picker
+npx expo install expo-image-picker
+
 #build the app to apk file
 #install EAS package
 npm install -g eas-cli
