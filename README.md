@@ -61,6 +61,8 @@ expo install react-native-safe-area-context@3.3.2
 
 #install image picker
 npx expo install expo-image-picker
+# install corrousel images
+npm install --save react-native-snap-carousel
 
 #build the app to apk file
 #install EAS package
