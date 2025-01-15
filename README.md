@@ -8,6 +8,12 @@ npm create bot-whatsapp@latest #follow the step by step guide
 cd <botName>
 npm install
 npm start
+
+d#dependencies
+npm install express
+npm install cors
+npm install queue-promise
+
 ```
 
 # React Native
