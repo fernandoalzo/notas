@@ -1,6 +1,15 @@
 # notas erre
  repositorio con notas
 
+ ## WhatsApp bot
+```powershell
+#create a new chat bot
+npm create bot-whatsapp@latest #follow the step by step guide
+cd <botName>
+npm install
+npm start
+```
+
 # React Native
 ```powershell
 #install expo go
@@ -508,7 +517,7 @@ npm install multer
 npm install express-rate-limit
 
 #clear cache
-npm cache clean --force 
+npm cache clean --force
 ```
 ## pm2
 ```powershell
