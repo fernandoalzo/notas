@@ -78,6 +78,8 @@ expo install react-native-safe-area-context@3.3.2
 npx expo install expo-image-picker
 # library to handle images from internet with auth
 npm install react-native-fast-image
+for add pick image from take picture with camera
+expo install expo-image-manipulator
 
 #build the app to apk file
 #install EAS package
