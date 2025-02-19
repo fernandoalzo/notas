@@ -96,6 +96,9 @@ expo install expo-linear-gradient
 npm view [packageName] version
 npm view react-native-maps version
 
+#state management
+npm install @reduxjs/toolkit react-redux
+
 #clear cache
 expo r -c
 
